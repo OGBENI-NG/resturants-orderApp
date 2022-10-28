@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <title>Mobile Resturants App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@200;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="header-text">
+            <h2>Check'in foods</h2>
+            <p>Check'in for the best burger and pizzas in town</p>
+        </div>
+    </header>
+    <main>
+        
+        <div class="container" id="container">
+                <!-- Menu elements here -->
+        </div>
+        <div class="selected-order-container hidden" id="selected-order">
+            <!-- Order elements here -->
+                
+         </div>
+        <div id="completed-order" class="completed-order hidden">
+                <!-- completed order elements here -->
+        </div>
+           
+        <div class="form-modal  hidden" id="form-modal">
+            <form id="order-form"  class="form-container">
+                <div class="input-container">
+                    <h4>Enter card details</h4>
+                    <input type="text" name="name" id="name" placeholder="Enter your fullname" required/>
+                    <input type="number" name="card-number" id="card-number" placeholder="Enter card number" required/> 
+                    <input type="number" name="cvv" id="cvv" placeholder="Enter CVV" required/> 
+                </div>
+               <button type="submit" class="order-button" id="submit-button">Pay</button>
+            </form>
+       </div>
+    </main>
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>
